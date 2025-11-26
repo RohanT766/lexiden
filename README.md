@@ -26,7 +26,11 @@ cd backend
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env      # Add your OPENAI_API_KEY
+
+# Create .env file with your API key
+echo "OPENAI_API_KEY=your_key_here" > .env
+echo "MODEL_NAME=gpt-4o" >> .env
+
 python app.py             # Runs on http://localhost:5001
 ```
 
@@ -57,7 +61,7 @@ MODEL_NAME=gpt-4o         # or gpt-4-turbo, gpt-3.5-turbo
 - Non-Disclosure Agreements (NDA)
 - Employment Agreements
 - Service Agreements
-- Any custom legal document
+- Any custom legal document!!
 
 ## Tech Stack
 
