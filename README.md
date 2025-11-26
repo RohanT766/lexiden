@@ -45,7 +45,7 @@ npm start                 # Runs on http://localhost:3000
 
 ```env
 OPENAI_API_KEY=your_key_here
-MODEL_NAME=gpt-4o         # or gpt-4-turbo, gpt-3.5-turbo
+MODEL_NAME=gpt-5.1
 ```
 
 ## How It Works
