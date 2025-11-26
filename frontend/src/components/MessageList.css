@@ -1,0 +1,168 @@
+.message-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.message {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.message-sender {
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.message-time {
+  color: #9ca3af;
+}
+
+.message-content {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.message.user .message-content {
+  background: #111827;
+  color: white;
+  margin-left: 2rem;
+}
+
+.message.assistant .message-content {
+  background: #f9fafb;
+  color: #111827;
+  margin-right: 2rem;
+  border: 1px solid #e5e7eb;
+}
+
+.message.assistant .message-content h1 {
+  color: #111827;
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.message.assistant .message-content h2 {
+  color: #374151;
+  font-size: 1.125rem;
+  margin: 1rem 0;
+}
+
+.message.assistant .message-content h3 {
+  color: #374151;
+  font-size: 1rem;
+  margin: 0.75rem 0;
+}
+
+.message.assistant .message-content ul,
+.message.assistant .message-content ol {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+.message.assistant .message-content li {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+}
+
+.message.assistant .message-content code {
+  background: #f3f4f6;
+  padding: 0.125rem 0.25rem;
+  border-radius: 3px;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 0.8rem;
+}
+
+.message.assistant .message-content pre {
+  background: #1f2937;
+  color: #e5e7eb;
+  padding: 0.75rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+  font-size: 0.8rem;
+}
+
+.message.assistant .message-content pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+.message.streaming .message-content {
+  position: relative;
+}
+
+.typing-cursor {
+  animation: blink 1s infinite;
+  color: #6b7280;
+  font-weight: normal;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.function-call {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 0.875rem;
+  background: #f3f4f6;
+  color: #6b7280;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid #e5e7eb;
+}
+
+.function-icon {
+  display: none;
+}
+
+.function-name {
+  flex: 1;
+}
+
+.function-status {
+  font-size: 0.75rem;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 0.875rem;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.error-icon {
+  display: none;
+}
