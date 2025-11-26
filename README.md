@@ -8,7 +8,8 @@ AI-powered legal document generation with real-time streaming and intelligent co
 - **3 LLM Functions** - `extract_information`, `generate_document`, `apply_edits`
 - **Smart Prompting** - Conversational data collection before document creation
 - **PDF Export** - Markdown-to-PDF conversion with proper formatting
-- **Edit Support** - Modify generated documents through natural language
+- **Edit Fields** - Change specific values like dates, names, terms through conversation
+- **Edit Structure** - Prompt to reformat
 
 ## Challenge Requirements
 
